@@ -1,0 +1,56 @@
+body{
+margin-bottom: 40px;
+}
+#root {
+  width: 100%;
+  height: 100vh;
+}
+footer {
+  position: fixed; 
+  bottom: 0;
+  margin-top: auto;
+   padding: 1rem;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px;
+
+}
+@media (min-width: 1366px) and (max-width: 1920px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+    padding:15px;
+  } 
+} 
+
+@media (max-width: 599px) {
+footer{
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+
+  margin-top: 70%;
+  width: 100%;
+} 
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px)  {
+footer{
+
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+  
+    margin-top: 70%;
+    width: 100%; 
+
+ }
+}

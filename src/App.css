@@ -1,0 +1,155 @@
+.box {
+  width: 100vh;
+  height: 100vh;
+  max-width: 600px; 
+  border: 0px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./back.png"); 
+}
+.heading{
+font-size: 3rem;
+color: rgb(255, 255, 255);
+text-align: center;
+font-weight: 900;
+}
+.label{
+display: block;
+background-color: transparent;
+color: white;
+margin-bottom: 0.5rem;
+}
+form {
+position: relative;
+width: 90%; 
+max-width: 600px; 
+padding: 10px;
+border: 1px solid #feffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7px);
+}
+input[type="text"], input[type="password"] {
+width: 100%; 
+padding: 0.5rem;
+margin-bottom:1rem;
+border-top: 1px solid transparent;
+border-right: 1px solid transparent;
+border-left: 1px solid transparent;
+border-bottom: 2px solid rgb(128, 147, 239);
+background-color: transparent;
+}
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.captcha {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid #000000;
+  border-top-right-radius : 20px;
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+}
+button[type="submit"] {
+  background-color: rgb(255, 154, 2); 
+  color: #fff;
+  margin: auto;
+  padding: 0.5rem 128px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0px 0px 18px #00000088;
+  background-color: #2ce032;
+}
+
+input[type="text"].captcha-input {
+  width: auto;
+  flex: 1;
+}
+
+
+/* For tablets  */
+@media (min-width: 600px) and (max-width: 1023px)  {
+  .container {
+  width: 90%; 
+  }
+  h1{
+    margin-top: 200px;
+    font-size:80px;
+  }
+
+  
+
+  button[type="submit"] {
+    padding: 10px 240px; 
+  }
+  
+  footer{
+    
+   padding: 10px;
+   
+    
+   
+   
+  }
+}  
+
+
+
+
+/*For phones*/
+@media (max-width: 599px) {
+  .container {
+    width: 85%;
+    padding: 1px;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+  form {
+    
+    width:300px;
+    padding: auto;
+    margin: 44px auto;
+    position: relative;
+    
+     
+  }
+
+  button[type="submit"] {
+    padding: 10px 108px; 
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .container {
+    width: 80%;
+    max-width: 1000px; 
+  }
+  h1 {
+    font-size: 70px;
+    /* text-transform: uppercase; */
+    /* margin-top: 10px; */
+  }
+  form {
+    width: 85%; 
+    margin: 8px auto;
+    padding: 20px;
+  }
+  button[type="submit"] {
+    padding: 10px 200px; 
+  }
+}
