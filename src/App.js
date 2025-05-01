@@ -45,7 +45,7 @@ function App() {
 
     if (username === 'ananya' && password === '1234') {
       Cookies.set('cookieconstant', username, { path: '/' });
-      window.location = 'http://localhost:3000/Home';
+       window.location.href = '/Home';
     } else {
       alert('Invalid username or password');
     }
